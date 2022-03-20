@@ -1,0 +1,11 @@
+# ninja log v5
+5	237	6695207466550565	CMakeFiles/ReferenceWordSearch.dir/src/tests.c.obj	b23719ba34960fab
+29	247	6695207466690603	CMakeFiles/ReferenceWordSearch.dir/src/ReferenceWordSearch.c.obj	2da8607ec3501226
+4	137	6695216509460732	CMakeFiles/ReferenceWordSearch.dir/src/main.c.obj	28b8ee1f26d2c377
+37	270	6695207466970691	CMakeFiles/ReferenceWordSearch.dir/src/production.c.obj	11c16ee297fa742c
+271	511	6695207469190536	ReferenceWordSearch.exe	840eb3d4e282d202
+1	342	6695217252301974	build.ninja	64bea60ed45adcea
+3	203	6695217255145792	ReferenceWordSearch.exe	840eb3d4e282d202
+28	217	6695225521486140	CMakeFiles/ReferenceWordSearch.dir/src/ReferenceWordSearch.c.obj	2da8607ec3501226
+3	230	6695225521646137	CMakeFiles/ReferenceWordSearch.dir/src/production.c.obj	11c16ee297fa742c
+230	495	6695225524236136	ReferenceWordSearch.exe	840eb3d4e282d202

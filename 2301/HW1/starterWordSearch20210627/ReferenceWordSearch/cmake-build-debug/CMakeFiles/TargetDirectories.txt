@@ -1,0 +1,3 @@
+C:/Users/patri/Computer Science Schoolwork/CS 2301/HW1/starterWordSearch20210627/ReferenceWordSearch/cmake-build-debug/CMakeFiles/ReferenceWordSearch.dir
+C:/Users/patri/Computer Science Schoolwork/CS 2301/HW1/starterWordSearch20210627/ReferenceWordSearch/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/patri/Computer Science Schoolwork/CS 2301/HW1/starterWordSearch20210627/ReferenceWordSearch/cmake-build-debug/CMakeFiles/rebuild_cache.dir
