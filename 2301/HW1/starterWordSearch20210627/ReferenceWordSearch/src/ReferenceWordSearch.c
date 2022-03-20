@@ -27,6 +27,6 @@ int main(int argc, char* argv[]) {
 		puts("Not all tests passed; better luck next time");
 	}
 
-	return EXIT_SUCCESS;
+	return EXIT_SUCCESS; //comment
 }
 
