@@ -7,9 +7,10 @@
 
 #include "production.h"
 
-bool production(int argc, char* argv[])
+int* production(int argc, char* argv[])
 {
 	bool answer = true;
+    int total_found_words = 0;
 	char string4Search[MAXSTRINGLENGTH+1];
 	bzero(string4Search, MAXSTRINGLENGTH+1);
 	int foundStringLength = -1;//initialize to obviously wrong value
@@ -20,7 +21,8 @@ bool production(int argc, char* argv[])
 			fflush(stdout);
 			answer = false;
 		}
-		else //there is interesting information
+
+		else //there is interesting information, time to do something
 		{
 			printf("Found %d arguments.\n", argc);
 			fflush(stdout);
@@ -54,22 +56,20 @@ bool production(int argc, char* argv[])
 		//now that we have our input,
 		//what is to be done:
 
-	    for(int i = 0; i<foundStringLength; i++)
-	    {
+        int res = 0;
+        total_found_words = substringExtraction(string4Search,res);
+        //TODO: the actual homework
 
-            int res = 0;
-            substringExtraction(string4Search,res);
-            //TODO: the actual homework
-	    	//find substrings starting here, of some feasible length
-	    	//is it a word?
-	    	//if it is, keep score
-
-	    }
+        //find substrings starting here, of some feasible length
+        //	    	//is it a word?
+        //	    	//if it is, keep score
 
 	    //print output
 
-		return answer;
+		return total_found_words;
 }
+
+
 bool getYesNo(char* query)
 {
    bool answer = true; //so far
@@ -80,23 +80,28 @@ bool getYesNo(char* query)
      fflush(stdout);
      fflush(stdin);
      scanf("%c",&said);
-   }while((said!= 'y')&&(said!='n'));
+   }
+   while((said!= 'y')&&(said!='n'));
    if(said=='n')
    {
 	   answer=false;
    }
 
-
    return answer;
 }
 
-void substringExtraction(char* whole, int* results)
+int* substringExtraction(char* whole, int* results)
 {
 	int theLength = strlen(whole);
 	char target[theLength+1];
 	bzero(target, theLength+1);
 	char query[100];
 	bzero(query, 100);
+    int substringcounter = 0;
+    char listofresults[100];
+    bzero(listofresults, 100);
+
+
 	for(int size = 1; size<=theLength-1; size++)
 	{
 		int howMany = theLength-size+1;
@@ -109,8 +114,10 @@ void substringExtraction(char* whole, int* results)
 			sprintf(query, "Is |%s| a word?\n", target);
 			if(getYesNo(query)) //if the user says yes, increment the appropriate location in the results array
 			{
-				//the user said yes
-				//TODO: add to the results
+                //the user said yes
+                //TODO: add to the results
+                listofresults[substringcounter] = target;
+                substringcounter++;
 			}
 			else
 			{
@@ -119,5 +126,8 @@ void substringExtraction(char* whole, int* results)
 
 		}
 	}
+
+    return substringcounter;
+
 }
 

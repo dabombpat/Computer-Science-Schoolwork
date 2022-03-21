@@ -15,18 +15,20 @@
 #include "teamMembers.h"
 
 int main(int argc, char* argv[]) {
-	puts("!!!Hello World, let's do Word Search!!!");
-    //TODO: change this from 1 to tests()
-	if(1)
+    int total_words_found = 0;
+
+	puts("Hello World, let's do a Word Search!!!");
+	if(1) // tests()
 	{
 		puts("The tests all passed.");
-		production(argc, argv);
+		total_words_found = production(argc, argv);
 	}
 	else
 	{
 		puts("Not all tests passed; better luck next time");
 	}
 
-	return EXIT_SUCCESS; //comment
+    printf("Successfully found %d words in the wordsearch! \n", total_words_found);
+	return EXIT_SUCCESS;
 }
 

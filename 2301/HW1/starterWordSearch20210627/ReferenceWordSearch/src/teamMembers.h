@@ -8,6 +8,6 @@
 #ifndef TEAMMEMBERS_H_
 #define TEAMMEMBERS_H_
 
-//alphabetical order by last name is easiest
+// Made By A One-Man Army: Patrick Flanigan!
 
 #endif /* TEAMMEMBERS_H_ */

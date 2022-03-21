@@ -14,9 +14,9 @@
 
 #define MAXSTRINGLENGTH (100)
 
-bool production(int argc, char* argv[]);
+int* production(int argc, char* argv[]);
 bool getYesNo(char* query);
-void substringExtraction(char* whole, int* results);
+int * substringExtraction(char* whole, int* results);
 
 
 #endif /* PRODUCTION_H_ */
